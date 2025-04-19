@@ -4,6 +4,21 @@ Welcome to the take-home challenge for the **Senior Backend Engineer** role at [
 
 This challenge simulates a real-world feature module you’d build on our platform. It tests how you think, code, and ship.
 
+✅ Submission Instructions
+Fork this repo
+
+Complete the challenge within 48 hours
+
+Push your code to your fork
+
+Share your forked repo link with us via email at: tech@omnipresence.com
+
+Bonus points for:
+
+Notion/Loom video walking through your code
+
+CI/CD, docker setup, observability practices
+
 ---
 
 ## 🎯 Objective
