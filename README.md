@@ -11,7 +11,7 @@ Complete the challenge within 48 hours
 
 Push your code to your fork
 
-Share your forked repo link with us via email at: tech@omnipresence.com
+Share your forked repo link with us via email at: rishitsaraf24@gmail.com
 
 Bonus points for:
 
