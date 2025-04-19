@@ -3,6 +3,7 @@
 Welcome to the take-home challenge for the **Senior Backend Engineer** role at [Omnipresence](https://omnipresence.vercel.app) – a fast-scaling B2B eCommerce platform.
 
 This challenge simulates a real-world feature module you’d build on our platform. It tests how you think, code, and ship.
+---
 
 ✅ Submission Instructions
 Fork this repo
