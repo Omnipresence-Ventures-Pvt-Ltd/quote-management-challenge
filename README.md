@@ -1,81 +1,55 @@
-# 💼 Omnipresence – Saved Quotes Backend Challenge
+# Omnipresence - Saved Quotes Challenge
 
-Welcome to the take-home challenge for the **Senior Backend Engineer** role at [Omnipresence](https://omnipresence.vercel.app) – a fast-scaling B2B eCommerce platform.
+This is a starter repo for the Omnipresence 2-day take-home challenge.
 
-This challenge simulates a real-world feature module you’d build on our platform. It tests how you think, code, and ship.
----
+## Task
 
-✅ Submission Instructions
-Fork this repo
+Build a scalable and maintainable backend module for a "Saved Quotes" feature as outlined in the challenge PDF.
 
-Complete the challenge within 48 hours
+## Getting Started
 
-Push your code to your fork
+### Requirements
+- Node.js (v16+)
+- MongoDB or PostgreSQL
+- Yarn or npm
 
-Share your forked repo link with us via email at: rishitsaraf24@gmail.com
+### Setup
+```bash
+git clone [your-forked-repo]
+cd omnipresence_saved_quotes_challenge
+npm install
+# or
+yarn install
+```
 
-Bonus points for:
+Create a `.env` file in the root with relevant DB and JWT configuration.
 
-Notion/Loom video walking through your code
+### Running the app
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-CI/CD, docker setup, observability practices
+### Testing
+```bash
+npm test
+# or
+yarn test
+```
 
----
+## Folder Structure
 
-## 🎯 Objective
+- `src/routes` - Route definitions
+- `src/controllers` - Business logic handlers
+- `src/models` - DB models (mongoose/sequelize/typeORM)
+- `src/middleware` - Auth, error handling, etc.
+- `src/utils` - Utilities and helpers
+- `tests` - Unit/integration tests
 
-Design and implement a **Saved Quotes** module for authenticated buyers.
+## Notes
+- Feel free to restructure or add libraries as needed.
+- Add comments where helpful.
+- Document any assumptions you make in the README.
 
-This includes:
-- Creating, modifying, and listing saved quotes
-- Automatic expiry handling (14 days)
-- Change tracking (audit trail)
-- Versioning and rollback
-- Optimistic locking
-
----
-
-## 🧪 What to Build
-
-### Core APIs
-
-| Method | Endpoint         | Description                            |
-|--------|------------------|----------------------------------------|
-| POST   | `/quotes`        | Save a new quote                       |
-| GET    | `/quotes/:id`    | View a saved quote                     |
-| PUT    | `/quotes/:id`    | Update a quote (if not expired)        |
-| DELETE | `/quotes/:id`    | Soft delete a quote                    |
-| GET    | `/quotes`        | List all quotes for the logged-in user |
-
----
-
-### 🧠 Business Rules
-
-- Quotes expire **14 days** after creation (unless extended)
-- Prevent duplicate quotes for the same product+quantity combo within **2 hours**
-- All quotes must be **versioned** (e.g., v1, v2, ...)
-- Support **optimistic locking** (handle update conflicts gracefully)
-- Track **full change history** in a `quote_history` table
-- Auth should use **JWT**
-- Code must have **schema validation**, error handling, and be modular
-
----
-
-## ⚙️ Stack
-
-You can use any backend stack, but we recommend:
-
-- **Node.js + Express**
-- **PostgreSQL**
-- **JWT for auth**
-- Any ORM/Query builder (e.g., Prisma, Knex, Sequelize)
-
----
-
-## 🧪 Testing
-
-- Unit tests for key logic (expiry, locking, etc.)
-- 1 integration test (end-to-end flow)
-- Use any testing framework (e.g., Jest, Mocha)
-
-
+Good luck 🚀
