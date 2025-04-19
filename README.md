@@ -62,14 +62,4 @@ You can use any backend stack, but we recommend:
 - 1 integration test (end-to-end flow)
 - Use any testing framework (e.g., Jest, Mocha)
 
----
 
-## 🚀 Getting Started
-
-```bash
-git clone https://github.com/YOUR_USERNAME/quote-management-challenge.git
-cd quote-management-challenge
-npm install
-cp .env.example .env
-# Add DB credentials to .env
-npm run dev
